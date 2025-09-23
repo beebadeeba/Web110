@@ -1,0 +1,47 @@
+/* Bee Corbin CSS Practice Styles */
+
+h1{
+    color:#9b2226;
+    font-size:36px;
+    text-align:center;
+    text-decoration:underline
+}
+
+.subh1{
+    color:#975513;
+    text-decoration:underline
+}
+
+body{
+    background-color:#48ce48;
+    color:#624d26
+}
+
+h2, h3{
+    color:#48ce48;
+    background-color:#975513;
+}
+
+footer h6{
+    color:black;
+    background-color:orange;
+    font-size:12px;
+    text-align: center;
+    border:5px dotted #006688;
+}
+
+.highlightText{
+    background-color: #ffc964;
+    font-style:italic;
+}
+
+.name{
+    font-weight: bold;
+    text-align: center;
+    color:#698dad;
+    text-decoration:double;
+}
+
+footer{
+    border:5px double #006610
+}
