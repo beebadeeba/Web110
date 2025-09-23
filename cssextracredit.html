@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Practice Extra Credit</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Put your CSS styles below */
+
+    
+    
+    
+    
+    /*The CSS below needs to stay here. Don't touch it if you want your page to work.  See note below for the one item that can be removed. */
+    /* If you want to change the colors of the boxes those colors are on line 40,48,abd 54.  Feel free to change those. */
+ * 
+{
+  box-sizing: border-box;
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px)
+{
+  .column.side, .column.middle
+    {
+    width: 100%;
+     }
+ }
+    /* Create three unequal columns that floats next to each other */
+.column
+{
+  float: left;
+  padding: 10px;
+  height: 300px; /* This one can be removed.  It creates a container for your test. But can be removed when you add text. Only for demonstration to force a big box to appear.*/
+}
+
+/* Left column */
+.column.sideleft 
+{
+  width: 25%;
+  background-color:#add8e6;
+  overflow: auto;
+}
+
+/* Middle column */
+.column.middle
+{
+  width: 50%;
+  background-color:#a9bcba;
+}
+/* right column */
+.column.sideright
+{
+  width: 25%;
+ background-color:#C78B88;
+}
+
+/* Clear floats after the columns */
+.row:after
+{
+  content: "";
+  display: table;
+  clear: both;
+}
+    
+</style>
+</head>
+<body>
+
+<style>
+.foods{
+  font-family: Arial,sans-serif;
+  background-color: #616bca;
+  color: antiquewhite;
+}
+
+.facts{
+ font-family: Arial,sans-serif;
+  background-color: #216074;
+  color: antiquewhite;
+}
+
+.postjccc{
+ font-family: Arial,sans-serif;
+  background-color: #75302b;
+  color: antiquewhite;
+}
+</style>
+
+<h2>CSS Template Extra Credit</h2>
+
+<p> This is a page about my favorite movies, foods, and more. </p>
+    
+<!-- The header section --> 
+<div>
+  <h2>Bee Corbin</h2>
+</div>
+
+ <div > <!-- The subheader section --> 
+  <h3>This is my first CSS web page with CSS! </h3>
+</div>
+<div>
+    <!-- The first column --> 
+	<div class="column sideleft">
+	<p> My Favorite Foods </p>
+		<ul class="foods">
+      <li>Borscht</li>
+      <li>French Onion Soup</li>
+      <li>Pelmeni</li>
+      <li>Olivier Salad</li>
+      <li>Schi</li>
+    </ul>
+	</div>
+    
+     <!-- The second column --> 
+	<div class="column middle">
+	<p>5 facts about you </p>
+    <ul class="facts">
+      <li>I love to cook</li>
+      <li>I am a pretentious movie snob</li>
+      <li>My family is from Russia</li>
+      <li>I am a classically trained musician</li>
+      <li>I can read cyrillic at a kindergarten level</li>
+    </ul>
+	</div>
+    
+     <!-- The third column --> 
+	<div class="column sideright">
+  	<p>What do you want to do after JCCC?</p>
+	<!-- Create a paragraph or list of things you want to do after you leave JCCC-->
+   <p class="postjccc">After leaving JCCC I really want to get a good paying job, hopefully somewhere where my coding is for a good purpose, like at a hospital or a charity.</p>
+	</div>
+</div>
+
+     <!-- The footer section --> 
+<div >
+  <p>9/23/2025</p>
+  <a href="mailto:bcorbin3@stumail.jccc./edu">bcorbin3@stumail.jccc.edu</a>
+</div>
+
+</body>
+</html>
+
+
