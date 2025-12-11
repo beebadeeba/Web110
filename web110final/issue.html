@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI in Web Development — Issues</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="issue.html" class="active">Issues</a></li>
+        <li><a href="form.html">Quiz</a></li>
+        <li><a href="info1.html">Benefits</a></li>
+        <li><a href="info2.html">Drawbacks</a></li>
+        <li><a href="resources.html">Resources</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+<img src="issues.png" alt="issue icon">
+
+  <main id="wrapper" class="two-col">
+    <article class="content">
+      <h1>Key Issues When Introducing AI</h1>
+
+        <h2>Ethics, bias, and fairness</h2>
+      <p>AI systems are trained on historical code, datasets, or web content, and can reproduce biases. For example: because there is so much media descrediting the achievements of POC, the AI could 
+        learn and replicate these biases, creating unfair outcomes. Recommended content or decision made by the AI may disadvantage particular groups if training data is skewed. 
+         Ethical review and diverse datasets are necessary to avoid amplifying these problems.</p>
+
+      <p>In a professional setting, bias audits and add extra security measures, such as explainability logs and rollback options should be implemented by any team using AI;
+         so their AI-produced outputs can be traced and corrected. Regulation on algorithmic fairness is increasing,
+        so documenting datasets and decisions is especially important when relying on 3rd party information.</p>
+
+      <p>Practically, a bias mitigation step should already be in any given team's deployment checklist: But when using AI, an extra test with sample users can prevent any bias from the AI.</p>
+
+        <h2>Security & dependency risks</h2>
+
+      <p>AI tools often introduce integrity risks. Using external APIs for code completion or generation means secrets and code context might be sent to third parties.</p>
+
+      <p>Maliciously crafted prompts or poisoned training samples can cause undesirable behavior. Using security practices like
+         isolating model access, sanitizing inputs, and (in a professional setting) requiring human review for critical outputs can help mitigate these dangers.</p>
+
+      <p>Plan for service outages: when you rely on an AI 3rd party to create or maintain your code or website, 
+        you must build fallbacks or failsafes so your site continues to operate if an AI service becomes unavailable.</p>
+    </article>
+
+    <aside class="sidebar">
+      <h3>TL;DR</h3>
+      <ol>
+        <li>Bias is prevalent in media - therefore will be prevalent in the data AI trains from.</li>
+        <li>AI can introduce malicious or poisoned content because it is trained on user data, and people can purposefully poison the AI's database</li>
+      </ol>
+    </aside>
+  </main>
+
+  <footer>
+    <p>© 2025 Brady Corbin</p>
+  </footer>
+</body>
+</html>

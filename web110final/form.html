@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Quiz</title>
+
+
+<!-- Embedded styles for form page only -->
+<style>
+form {
+background: #f2f2f2;
+padding: 1em;
+border-radius: 8px;
+width: 90%;
+margin: 1em auto;
+}
+label {
+display: block;
+margin-top: 0.8em;
+font-weight: bold;
+}
+input, select, textarea {
+width: 100%;
+padding: 0.5em;
+margin-top: 0.3em;
+}
+input[type="radio"], input[type="checkbox"] {
+width: auto;
+margin-right: 0.5em;
+}
+input[type="submit"], input[type="reset"] {
+width: auto;
+margin-top: 1em;
+padding: 0.6em 1.2em;
+}
+h3 {
+margin-top: 1.2em;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>AI in Web Development Quiz</h1>
+<img src="quiz.webp" alt="comic book quiz">
+</header>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="issue.html">Issue</a></li>
+<li><a href="form.html" class="active">Quiz</a></li>
+<li><a href="info1.html">Info 1</a></li>
+<li><a href="info2.html">Info 2</a></li>
+<li><a href="resources.html">Resources</a></li>
+</ul>
+</nav>
+
+
+<main id="wrapper">
+<h2>Test Your Knowledge</h2>
+<p>Answer the quiz questions below to test your understanding of the pros and cons of AI in web development.</p>
+
+
+<form action="#" method="post">
+
+<label for="name">Your Name:</label>
+<input type="text" id="name" name="name" required>
+
+<label for="quizdate">Date Completed:</label>
+<input type="date" id="quizdate" name="quizdate" required>
+
+<!-- Quiz Question 1 -->
+<h3>1. Which of the following is a major benefit of AI in web development?</h3>
+<label><input type="radio" name="q1" value="speed" required> Faster prototyping and code generation</label>
+<label><input type="radio" name="q1" value="none"> AI eliminates all bugs forever</label>
+<label><input type="radio" name="q1" value="noimpact"> AI has no impact on development speed</label>
+
+<!-- Quiz Question 2 -->
+<h3>2. What is a common risk of relying too heavily on AI tools?</h3>
+<label><input type="radio" name="q2" value="security" required> Security vulnerabilities in generated code</label>
+<label><input type="radio" name="q2" value="perfect"> AI always writes perfect code</label>
+<label><input type="radio" name="q2" value="none"> There are no risks involved</label>
+
+<!-- Required Checkbox -->
+<label><input type="checkbox" name="honor" required> I confirm these answers are my own</label>
+
+<!-- Required Select -->
+<label for="tool">Which AI tool would you like to learn more about?</label>
+<select id="tool" name="tool" required>
+<option value="chatgpt">ChatGPT</option>
+<option value="copilot">GitHub Copilot</option>
+<option value="gemini">Gemini Code Assist</option>
+</select>
+
+<!-- Required Textarea -->
+<label for="feedback">Optional: Share anything you learned from this website</label>
+<textarea id="feedback" name="feedback" rows="5"></textarea>
+
+<!-- Submit + Reset -->
+<input type="submit" value="Submit Quiz">
+<input type="reset" value="Reset Form">
+</form>
+</main>
+
+<footer>
+<p>© 2025 Brady Corbin</p>
+</footer>
+</body>
+</html>
